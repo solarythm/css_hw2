@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Lab</title>
+    <style> 
+    body{ padding: 0; margin: 0;  height: 200vh;}
+    .big{ width: 50%; height: 50%;}
+    .small{ width: 25%; height: 25%;}
+    .inside{ width: 10%; height: 10%;}
+    .absolute{ position: absolute;}
+    .relative{ position: relative;}
+    .fixed {position: fixed;}
+    .top { top: 0;}
+    .left { left: 0;}
+    .right { right: 0;}
+    .bottom { bottom: 0;}
+    .center { left: 50%; top: 50%; transform: translate(-50%, -50%);}
+    .red {background-color: red;}
+    .green {background-color: greenyellow;}
+    .yellow {background-color: yellow;}
+    .blue { background-color: blue;}
+    .pink { background-color: pink;}
+    .white { background-color: oldlace;}
+    </style>
+</head>
+<body>
+    
+    <div class = "absolute top left small red">  </div>
+
+    <div class = "absolute top right small green">  </div>
+    <div class = "absolute bottom left small blue">  </div>
+    <div class = "absolute bottom right small yellow">  </div>
+    
+    <div class = "fixed center big " > 
+        <div class = "absolute top left small red"> </div>
+        <div class = "absolute top right small green"> </div>
+        <div class = "absolute bottom left small blue"> </div>
+        <div class = "absolute bottom right small yellow"> </div>
+    </div>
+
+    <div class= "fixed inside center pink"> </div>
+</body>
+</html>
